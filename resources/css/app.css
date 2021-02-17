@@ -1,0 +1,58 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@font-face {
+    font-family: ProximaNova;
+    src: url(/fonts/ProximaNovaRegular.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url(/fonts/ProximaNovaBold.otf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: SourceSansPro;
+    src: url(/fonts/SourceSansPro-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: SourceSansPro;
+    src: url(/fonts/SourceSansPro-Bold.ttf);
+    font-weight: bold;
+}
+
+.transparent-button {
+    @apply w-140 h-40 lg:w-48 lg:h-12 bg-transparent rounded border-1 border-white font-bold duration-300 transform hover:-translate-y-1;
+}
+
+.input {
+    @apply mt-1 mb-4 pl-1 w-full h-44 border-1 rounded border-grey;
+}
+
+.form-btn {
+    @apply w-240 h-50 float-right border-none rounded bg-blue text-white font-bold text-sm 
+  flex justify-center items-center hover:bg-red;
+}
+
+.small-title {
+    @apply font-bold text-lg leading-5;
+}
+
+a:hover {
+    @apply text-red;
+}
+
+.red-line-icon {
+    @apply bg-red-line-icon inline-block w-6 h-3.5 mr-1 relative bottom-0.5;
+}
+
+.arrow-icon {
+    @apply bg-arrow-icon inline-block w-3.5 h-3.5 relative top-0.5;
+}
